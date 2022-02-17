@@ -16,12 +16,22 @@ public class Carro {
         this.ligado = ligado;
     }
 
+    // Métodos
+    public String estado() {
+        if (ligado == true) {
+            return "Ligado";
+        } else {
+           return "Desligado";
+        }
+    }
+
     public void print() {
         System.out.println("\n ----------------------");
 		System.out.print(" Carro");
 		System.out.print("\n Modelo: "+modelo);
 		System.out.print("\n Cor: "+cor);
-		System.out.println("\n ----------------------");
+        System.out.printf("\n Estado: "+estado()+"\n Velocidade atual: "+cont);
+		System.out.print("\n ----------------------");
     }
 
     public void ligar() {
@@ -36,6 +46,10 @@ public class Carro {
     public void desligar() {
         if (ligado == false) {
             System.out.println("\n O carro já está desligado!");
+        } if (cont > 0) {
+            System.out.println("\n O CARRO MORREU POIS ESTAVA EM MOVIMENTO!");
+            ligado = false;
+            cont = 0;
         } else {
             ligado = false;
             System.out.println("\n Você desligou o carro!");
@@ -72,9 +86,9 @@ public class Carro {
             System.out.println("\n O carro está parado!");
         } else {
             cont = 0;
-            System.out.print("\n ----------------------");
+            System.out.print("\n -----------------------------------------------------");
             System.out.print("\n VOCE CAPOTOU O CARRO POIS ESTAVA EM ALTA VELOCIDADE!");
-            System.out.print("\n ----------------------\n");
+            System.out.print("\n -----------------------------------------------------\n");
         } 
     }
 
