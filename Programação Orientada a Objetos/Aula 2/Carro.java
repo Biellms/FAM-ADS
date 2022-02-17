@@ -26,12 +26,12 @@ public class Carro {
     }
 
     public void print() {
-        System.out.println("\n ----------------------");
+        System.out.println("\n --------------------------------");
 		System.out.print(" Carro");
 		System.out.print("\n Modelo: "+modelo);
 		System.out.print("\n Cor: "+cor);
         System.out.printf("\n Estado: "+estado()+"\n Velocidade atual: "+cont);
-		System.out.print("\n ----------------------");
+		System.out.print("\n --------------------------------");
     }
 
     public void ligar() {
@@ -60,11 +60,11 @@ public class Carro {
         if (ligado == false) {
             System.out.println("\n LIGUE O CARRO PRIMEIRO!");
         } else { 
-        System.out.print("\n ----------------------");
+        System.out.print("\n --------------------------------");
 		cont++;
 		System.out.print("\n VOCE ACELEROU!");
 		System.out.print("\n Velocidade atual: "+cont);
-		System.out.print("\n ----------------------\n");
+		System.out.print("\n --------------------------------\n");
         }
         
     }
@@ -73,11 +73,11 @@ public class Carro {
         if (cont == 0) {
             System.out.println("\n O carro está parado puxe o FREIO DE MAO!");
         } else {
-        System.out.print("\n ----------------------");
+        System.out.print("\n --------------------------------");
 		cont--;
 		System.out.print("\n VOCE DESACELEROU!");
 		System.out.print("\n Velocidade atual: "+cont);
-		System.out.print("\n ----------------------\n");
+		System.out.print("\n --------------------------------\n");
         }     
     }
 
