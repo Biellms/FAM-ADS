@@ -28,7 +28,8 @@ public class ContaBanco {
             } else {
                 saldo = saldo + 150;
             }
-            System.out.println(" A conta "+getNumConta()+"-"+getTipo()+" foi aberta com sucesso!\n");
+            System.out.println(" A conta "+getNumConta()+"-"+getTipo()+" foi aberta com sucesso!\n"
+            + " Saldo: $"+getSaldo()+"\n");
         }
     }
 
@@ -55,16 +56,47 @@ public class ContaBanco {
         }
     }
 
-    public void depositar() {
-
+    public void depositar(double valor) {
+        if (status == true) {
+            saldo = saldo + valor;
+            System.out.println(" Depósito de: $"+valor+" efetuado com sucesso!\n"
+            + " Saldo: $"+getSaldo()+"\n");
+        } else {
+            System.out.println(" A conta deve estar aberta para efetuar um depósito!\n");
+        }
     }
 
-    public void sacar() {
-
+    public void sacar(double valor) {
+        if (status == true) {
+            if (saldo >= valor) {
+                saldo = saldo - valor;
+                System.out.println(" Saque de: $"+valor+" efetuado com sucesso!\n"
+                + " Saldo: $"+getSaldo()+"\n");
+            } else {
+                System.out.println(" Saldo insuficiente!\n");
+            }
+        } else {
+            System.out.println(" A conta deve estar aberta e com saldo positivo para efetuar um saque!\n");
+        }
     }
 
     public void pagarMensal() {
+        double valor;
 
+        if (saldo >= 12) {
+            if (tipo == "CC") {
+                valor = 12;
+                saldo = saldo - valor;
+            } else {
+                valor = 20;
+                saldo = saldo - valor;
+            }
+            System.out.println(" Pagamento mensal de: $"+valor+" efetuado com sucesso!\n"
+            + " Saldo: $"+getSaldo()+"\n");
+        } else {
+            System.out.println(" Saldo insuficiente!\n");
+        }
+            
     }
 
     public void print() {
