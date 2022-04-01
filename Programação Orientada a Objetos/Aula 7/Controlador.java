@@ -3,6 +3,9 @@ package controle;
 
 public interface Controlador {
 
+public abstract String volume();
+public abstract String status();
+public abstract String mudo();
 public abstract void ligar();
 public abstract void desligar();
 public abstract void abrirMenu();
