@@ -7,10 +7,12 @@ public class ControleRemoto implements Controlador {
     private int volume = 0;
     private Boolean status = false;
     private Boolean mudo = false;
-    private Boolean toque = false;
+    private Boolean toque = null;
 
     // Constructor
-    public void ControleRemoto() {  }
+    public void ControleRemoto() { 
+
+    }
 
     // Métodos
     @Override
@@ -48,12 +50,24 @@ public class ControleRemoto implements Controlador {
     }
 
     @Override
+    public String toque() {
+        if (toque == null) {
+            return "Não está tocando";
+        } if (toque == false) {
+            return "Pausado";
+        } else {
+            return "Tocando";
+        }
+    }
+
+    @Override
     public void abrirMenu() {
         System.out.println(" -------------------------------------");
         System.out.println("\t\t MENU");
         System.out.println(" Status: "+status());
         System.out.println(" Volume: "+volume());
         System.out.println(" Mudo: "+mudo());
+        System.out.println(" Som: "+toque());
         System.out.println(" -------------------------------------\n");
     }
 
@@ -62,7 +76,7 @@ public class ControleRemoto implements Controlador {
         if (status == true) {
             System.out.println(" O dispositivo já está ligado!\n");    
         } else {
-        status = true;
+            status = true;
             System.out.println(" Você ligou o dispositivo!\n");
         }
     }
@@ -117,8 +131,18 @@ public class ControleRemoto implements Controlador {
     @Override
     public void desligarMudo() {
         mudo = false;
-        System.out.println(" Mudo desligado!\n");
+        System.out.println(" Mudo desligado!");
         System.out.println(" Volume: "+volume()+"\n");
+    }
+
+    @Override
+    public void play() {
+        toque = true;
+    }
+
+    @Override
+    public void pause() {
+        toque = false;
     }
 
     // Getters and Setters
