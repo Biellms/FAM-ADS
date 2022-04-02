@@ -21,8 +21,6 @@ public class ControleRemoto implements Controlador {
 
         if (volume == 0 || mudo == true) {
             return "X";
-        } if (volume == 0) {
-            return "0";
         } else {
             for (int i = 0; i < volume; i++) {
                 v += "|";
@@ -86,8 +84,8 @@ public class ControleRemoto implements Controlador {
         if (status == false) {
             System.out.println(" O dispositivo já está desligado!\n");    
         } else {
-        status = false;
-        toque = false;
+            status = false;
+            toque = null;
             System.out.println(" Você desligou o dispositivo!\n");
         }
     }
@@ -137,12 +135,26 @@ public class ControleRemoto implements Controlador {
 
     @Override
     public void play() {
-        toque = true;
+        if (status == false) {
+            System.out.println(" Ligue o dispositivo para tocar!\n");
+        } if (toque == null || toque == false) {
+            toque = true;
+            System.out.println(" Dispositivo tocando!\n");
+        } else {
+            System.out.println(" Já está tocando!\n");
+        }
     }
 
     @Override
     public void pause() {
-        toque = false;
+        if (status == false) {
+            System.out.println(" Ligue o dispositivo para tocar!\n");
+        } if (toque == null || toque == true) {
+            toque = false;
+            System.out.println(" Dispositivo pausado!\n");
+        } else {
+            System.out.println(" Já está pausado!\n");
+        }
     }
 
     // Getters and Setters
