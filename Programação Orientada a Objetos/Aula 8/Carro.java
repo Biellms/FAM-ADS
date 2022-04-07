@@ -28,7 +28,19 @@ public class Carro {
     }
 
     public void Acelerar() {
-        Delta();
+        if (ligado == true) {
+            if (velocidadeAtual == velocidadeMaxima) { 
+                System.out.println(" Atingiu a velocidade máxima!");
+            } else {
+                if (Controle()) { 
+                    Delta(); 
+                } if (Controle() == false) {
+                    System.out.println(" Passe a marcha para acelerar mais!");
+                }
+            } 
+        } else {
+            System.out.println(" Ligue o carro primeiro");
+        }
     }
 
     public void passarMarcha() {
@@ -47,6 +59,16 @@ public class Carro {
         } else {
             velocidadeAtual = velocidadeMaxima;
             System.out.println(" Já está na velocidade máxima!\n Velocidade: "+getVelocidadeAtual()+"Km/h");
+        }
+    }
+
+    public Boolean Controle() {
+        double controle = delta*marcha;
+
+        if (velocidadeAtual < controle) {
+            return true;
+        } else {
+            return false;
         }
     }
 
