@@ -4,14 +4,17 @@ package controle;
 public class ControleRemoto implements Controlador {
     
     // Atributos
-    private int volume = 0;
-    private Boolean status = false;
-    private Boolean mudo = false;
-    private Boolean toque = null;
+    private int volume;
+    private Boolean status;
+    private Boolean mudo;
+    private Boolean toque;
 
     // Constructor
-    public void ControleRemoto() { 
-
+    public ControleRemoto() { 
+        volume = 0;
+        status = false;
+        mudo = false;
+        toque = null;
     }
 
     // Métodos
