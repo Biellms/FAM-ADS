@@ -20,11 +20,25 @@ public class Carro {
 
     // Métodos
     public void Ligar() {
-        ligado = true;
+        if (ligado) {
+            System.out.println(" O carro já está ligado!");
+        } else {
+            System.out.println(" Carro ligado!");
+            ligado = true;
+        }
     }
 
     public void Desligar() {
-        ligado = false;
+        if (velocidadeAtual > 0) {
+            System.out.println(" Você não pode desligar o carro em movimento!");
+        } else {
+            if (ligado) {
+                ligado = false;
+                System.out.println(" Carro desligado!");
+            } else {
+                System.out.println(" Carro já está desligado!");
+            }
+        }
     }
 
     public void Acelerar() {
@@ -32,11 +46,24 @@ public class Carro {
             if (velocidadeAtual == velocidadeMaxima) { 
                 System.out.println(" Atingiu a velocidade máxima!");
             } else {
-                if (Controle()) { 
-                    Delta(); 
-                } if (Controle() == false) {
+                if (Controle() == false) {
                     System.out.println(" Passe a marcha para acelerar mais!");
+                } else { 
+                    Delta();
                 }
+            } 
+        } else {
+            System.out.println(" Ligue o carro primeiro");
+        }
+    }
+
+    public void Desacelerar() {
+        if (ligado == true) {
+            if (velocidadeAtual <= 0) { 
+                System.out.println(" O carro está parado!\n Velocidade: "+getVelocidadeAtual()+"Km/h");
+            } else {
+                velocidadeAtual -= delta;
+                System.out.println(" Desacelerou!\n Velocidade: "+getVelocidadeAtual()+"Km/h");
             } 
         } else {
             System.out.println(" Ligue o carro primeiro");
@@ -48,7 +75,16 @@ public class Carro {
             marcha += 1;
             System.out.println(" Passou de marcha!\n Marcha Atual: "+getMarcha());
         } else {
-            System.out.println(" Já está na ultima marcha!\n Marcha Atual: "+getMarcha());
+            System.out.println(" Está na ultima marcha!\n Marcha Atual: "+getMarcha());
+        }
+    }
+
+    public void descerMarcha() {
+        if (marcha > 0) {
+            marcha -= 1;
+            System.out.println(" Desceu de marcha!\n Marcha Atual: "+getMarcha());
+        } else {
+            System.out.println(" Está no ponto morto!\n Marcha Atual: "+getMarcha());
         }
     }
 
@@ -73,7 +109,7 @@ public class Carro {
     }
 
     public void print() {
-        System.out.println("\n -------------------------------------------");
+        System.out.println(" -------------------------------------------");
         System.out.println(" Marcha atual: "+marcha);
         System.out.println(" Ligado: "+ligado);
         System.out.println(" Velocidade Atual: "+velocidadeAtual);

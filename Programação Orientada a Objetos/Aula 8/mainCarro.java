@@ -18,10 +18,11 @@ public class mainCarro {
             System.out.print("\n 1) Ligar");	
             System.out.print("\n 2) Desligar");
             System.out.print("\n 3) Acelerar");
-            // System.out.print("\n 4) Desacelerar");
-            System.out.print("\n 4) Passar Marcha");
-            System.out.print("\n 5) Informações");
-            System.out.print("\n 6) Sair");
+            System.out.print("\n 4) Desacelerar");
+            System.out.print("\n 5) Passar Marcha");
+            System.out.print("\n 6) Descer Marcha");
+            System.out.print("\n 7) Informações");
+            System.out.print("\n 8) Sair");
             System.out.print("\n Opção: "); op = ler.nextInt();
             System.out.println("");
     
@@ -29,10 +30,11 @@ public class mainCarro {
                     case 1: celtaDuasPorta.Ligar(); break;
                     case 2: celtaDuasPorta.Desligar(); break;
                     case 3: celtaDuasPorta.Acelerar(); break;
-                    // case 4: celtaDuasPorta.desacelerar(); break;
-                    case 4: celtaDuasPorta.passarMarcha(); break;
-                    case 5: celtaDuasPorta.print(); break;
-                    case 6: System.out.println(" Saindo...\n"); System.exit(0); break;
+                    case 4: celtaDuasPorta.Desacelerar(); break;
+                    case 5: celtaDuasPorta.passarMarcha(); break;
+                    case 6: celtaDuasPorta.descerMarcha(); break;
+                    case 7: celtaDuasPorta.print(); break;
+                    case 8: System.out.println(" Saindo...\n"); System.exit(0); break;
                     default: System.out.println("\n VALOR INCORRETO!"); break;
                 }
     
