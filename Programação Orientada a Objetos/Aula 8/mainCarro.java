@@ -9,9 +9,9 @@ public class mainCarro {
         Scanner ler = new Scanner(System.in);
         int op;
 
-        Carro celtaDuasPorta = new Carro(0,false,0,240,40);
+        Carro celtaDuasPortas = new Carro(0,false,0,240,40);
 
-        celtaDuasPorta.print();
+        celtaDuasPortas.print();
 
         do {
             System.out.print("\n Escolha uma opção");	
@@ -27,13 +27,13 @@ public class mainCarro {
             System.out.println("");
     
                 switch (op) {
-                    case 1: celtaDuasPorta.Ligar(); break;
-                    case 2: celtaDuasPorta.Desligar(); break;
-                    case 3: celtaDuasPorta.Acelerar(); break;
-                    case 4: celtaDuasPorta.Desacelerar(); break;
-                    case 5: celtaDuasPorta.passarMarcha(); break;
-                    case 6: celtaDuasPorta.descerMarcha(); break;
-                    case 7: celtaDuasPorta.print(); break;
+                    case 1: celtaDuasPortas.Ligar(); break;
+                    case 2: celtaDuasPortas.Desligar(); break;
+                    case 3: celtaDuasPortas.Acelerar(); break;
+                    case 4: celtaDuasPortas.Desacelerar(); break;
+                    case 5: celtaDuasPortas.passarMarcha(); break;
+                    case 6: celtaDuasPortas.descerMarcha(); break;
+                    case 7: celtaDuasPortas.print(); break;
                     case 8: System.out.println(" Saindo...\n"); System.exit(0); break;
                     default: System.out.println("\n VALOR INCORRETO!"); break;
                 }
