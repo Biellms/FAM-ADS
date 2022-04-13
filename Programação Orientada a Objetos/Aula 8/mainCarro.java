@@ -38,7 +38,7 @@ public class mainCarro {
                     default: System.out.println("\n VALOR INCORRETO!"); break;
                 }
     
-            } while (op != 7);
+            } while (op != 8);
     
             ler.close();
     }
