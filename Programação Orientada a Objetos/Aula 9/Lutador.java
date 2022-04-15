@@ -9,16 +9,16 @@ public class Lutador {
     private double altura, peso;
     
     // Constructor
-    public Lutador(String nome, String nacionalidade, String categoria, int idade, int vitorias, int derrotas, int empates, double altura, double peso) {
+    public Lutador(String nome, String nacionalidade, int idade,  double altura, double peso, int vitorias, int derrotas, int empates) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
-        this.categoria = categoria;
         this.idade = idade;
+        this.altura = altura;
+        setPeso(peso); // Faz com que o atributo seja substituível
         this.vitorias = vitorias;
         this.derrotas = derrotas;
         this.empates = empates;
-        this.altura = altura;
-        setPeso(peso); // Faz com que o atributo seja substituível
+        
     }
     
     // Métodos
@@ -30,15 +30,15 @@ public class Lutador {
         System.out.println(" Peso: "+getPeso()+"Kg");
         System.out.println(" Vitórias: "+getVitorias());
         System.out.println(" Derrotas: "+getDerrotas());
-        System.out.println(" Empates: "+getEmpates());
+        System.out.println(" Empates: "+getEmpates()+"\n");
     }
     
     public void status() {
         System.out.println(" "+getNome());
         System.out.println(" É um peso "+getCategoria());
-        System.out.println(" Com "+getVitorias()+"vitórias");
+        System.out.println(" Com "+getVitorias()+" vitórias");
         System.out.println(" "+getDerrotas()+" derrotas");
-        System.out.println(" E "+getEmpates()+" empates");
+        System.out.println(" E "+getEmpates()+" empates\n");
     }
     
     public void ganharLuta() {
