@@ -15,8 +15,8 @@ public class Pessoa {
     }
 
     // Métodos
-    public void fazerAniv(int valor) {
-        idade =+ valor;
+    public void fazerAniv() {
+        idade += 1;
         System.out.println(" Feliz Aniversário! idade atual: "+getIdade()+"");
     }
 

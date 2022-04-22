@@ -19,6 +19,14 @@ public class Professor extends Pessoa{
         System.out.println(" Salário aumentado para: $"+getSalario());
     }
 
+    @Override
+    public void print() {
+        System.out.println(" ------------------------------------");
+        super.print();
+        System.out.println(" Especialidade: "+getEspecialidade());
+        System.out.println(" Salário: $"+getSalario()+"\n");
+    }
+
     // Getters and Setters
     public String getEspecialidade() {
         return especialidade;

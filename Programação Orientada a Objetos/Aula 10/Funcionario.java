@@ -14,8 +14,25 @@ public class Funcionario extends Pessoa{
     }
 
     // Métodos
-    public void mudarTrabalho() {
-        
+    public void mudarTrabalho(String trabalho) {
+        setor = trabalho;
+        System.out.println(" Setor alterado para: "+getSetor());
+    }
+
+    public String status() {
+        if (trabalhando) {
+            return "Sim";
+        } else {
+            return "Não";
+        }
+    }
+
+    @Override
+    public void print() {
+        System.out.println(" ------------------------------------");
+        super.print();
+        System.out.println(" Setor: "+getSetor());
+        System.out.println(" Trabalhando: "+status()+"\n");
     }
 
     //Getters and Setters
