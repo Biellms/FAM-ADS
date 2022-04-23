@@ -12,12 +12,12 @@ Repositório com conteúdos do curso de ADS. Contendo documentos de estudos, pro
 
 <br>
 
-- ### **[2º Semestre](https://github.com/Biellms/ProjetoIntegrador-DeliveryC)**
+- ### **[2º Semestre - Delivery-C](https://github.com/Biellms/ProjetoIntegrador-DeliveryC)**
 > Criação de um aplicativo no qual a problemática são as dificuldades financeiras e sociais que a Covid-19 impôs aos comércios afetando assim, seu funcionamento. Para a solução, é a criação de um aplicativo onde a padaria cadastrará seu comércio e catalogue seus produtos no sistema, para então, o cliente compra-lo online. Desta forma, as vendas serão feitas seguindo as regras de distanciamento social e facilitará a vida do comerciante que tem dificuldades de trabalhar sem interação social.
 
 <br>
 
-- ### **[3º Semestre](https://github.com/Biellms/ProjetoIntegrador-GoDonate)**
+- ### **[3º Semestre - GoDonate](https://github.com/Biellms/ProjetoIntegrador-GoDonate)**
 > Planejamento e criação de um protótipo de um aplicativo, no qual a problemática é a dificuldade financeira que uma pessoa tem para adquirir algo de necessidade, se sustentar ou concluir um projeto. Como solução, é a criação de um protótipo de um aplicativo em que gerência doações, na qual o usuário poderá abrir uma vaquinha online. Nele o usuário poderá expor as suas necessidades financeiras ou compartilhar suas ideias e assim arrecadar fundos. Os fundos ficarão concentrados em um banco de dados para serem depositados em seus devidos legados ou sacados, havendo a menor taxa possível para cobrir os encargos ligados à transferência dos fundos e à gestão do projeto.
 
 <br>
