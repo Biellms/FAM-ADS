@@ -4,7 +4,11 @@ Repositório com conteúdos do curso de ADS. Contendo documentos de estudos, pro
 ###### Clique nos links abaixo para acessar os repositórios ⬇️
 #
 
+<center>
+
 ### **Projetos Integradores**📝
+
+</center>
 
 <br>
 
@@ -23,7 +27,11 @@ Repositório com conteúdos do curso de ADS. Contendo documentos de estudos, pro
 
 #
 
+<center>
+
 ### **Eventos**🏆
+
+</center>
 
 <br>
 
