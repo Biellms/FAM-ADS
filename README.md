@@ -1,2 +1,33 @@
-# FAM - Análise e Desenvolvimento de Sistemas
-Conteúdos e códigos de estudos.
+# **Análise e Desenvolvimento de Sistemas - FAM**
+
+Repositório com conteúdos do curso de ADS. Contendo documentos de estudos, programação, desenvolvimento e projetos integradores.
+###### Clique nos links abaixo para acessar os repositórios ⬇️
+#
+
+### **Projetos Integradores**📝
+
+<br>
+
+- ### **[2º Semestre](https://github.com/Biellms/ProjetoIntegrador-DeliveryC)**
+> Criação de um aplicativo no qual a problemática são as dificuldades financeiras e sociais que a Covid-19 impôs aos comércios afetando assim, seu funcionamento. Para a solução, é a criação de um aplicativo onde a padaria cadastrará seu comércio e catalogue seus produtos no sistema, para então, o cliente compra-lo online. Desta forma, as vendas serão feitas seguindo as regras de distanciamento social e facilitará a vida do comerciante que tem dificuldades de trabalhar sem interação social.
+
+<br>
+
+- ### **[3º Semestre](https://github.com/Biellms/ProjetoIntegrador-GoDonate)**
+> Planejamento e criação de um protótipo de um aplicativo, no qual a problemática é a dificuldade financeira que uma pessoa tem para adquirir algo de necessidade, se sustentar ou concluir um projeto. Como solução, é a criação de um protótipo de um aplicativo em que gerência doações, na qual o usuário poderá abrir uma vaquinha online. Nele o usuário poderá expor as suas necessidades financeiras ou compartilhar suas ideias e assim arrecadar fundos. Os fundos ficarão concentrados em um banco de dados para serem depositados em seus devidos legados ou sacados, havendo a menor taxa possível para cobrir os encargos ligados à transferência dos fundos e à gestão do projeto.
+
+<br>
+
+- ### **[4º Semestre (em desenvolvimento)](https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery)** 
+> Criação de um aplicativo no qual a problemática são as dificuldades financeiras das padarias com baixa renda, o aplicativo será gratuito para todas as padarias de pequeno e médio porte. Após análises, foi identificado que as padarias de bairros mais humildes sofrem com prejuízos imensos, por não terem um meio de distribuição de seus produtos. Para a solução, uma aplicação foi criada, onde a padaria irá cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente compre os seus produtos de forma segura e prática.
+
+#
+
+### **Eventos**🏆
+
+<br>
+
+- #### **[DESAFIO DE TECNOLOGIA (HACKATHON FAM 2021)](https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery)** 
+> Para tal problemática foi desenvolvido um programa em linguagem C, que executa e opera como um sistema de listagem e classificação diante dos dados fornecidos dentro do programa.
+
+<br>
