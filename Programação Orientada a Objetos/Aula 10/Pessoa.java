@@ -1,6 +1,6 @@
 package herança;
 
-public class Pessoa {
+abstract class Pessoa {
 
     // Atributos
     private String nome;
