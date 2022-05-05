@@ -48,7 +48,7 @@ Repositório com conteúdos do curso de ADS. Contendo documentos de estudos, pro
 
 <div align="center">
 
-***Gabriel Mendes Sousa © 2022***
+***© 2022 Gabriel Mendes | Todos os Direitos Reservados***
 
 <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8" target="_blank"><img src="https://img.shields.io/badge/-Linkedin-blue" width="50px" target="_blank"></a> | <a href="https://github.com/Biellms" target="_blank"><img src="https://img.shields.io/badge/-Github-gray" width="43px" target="_blank"></a>
 
