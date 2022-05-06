@@ -1,3 +1,5 @@
+package polimorfismo;
+
 public class Canguru extends Mamifero{
 
     // Constructor
@@ -6,14 +8,14 @@ public class Canguru extends Mamifero{
 
     }
 
+    // Métodos
     @Override
     public void print() {
         System.out.println(" -----------------------------------");
         super.print();
-        System.out.println("");
+        System.out.println();
     }
 
-    // Métodos
     public void usarBolsa() {
         System.out.println(" Começou a usar a bolsa!");
     }

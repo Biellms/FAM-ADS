@@ -1,3 +1,4 @@
+package polimorfismo;
 
 public abstract class Mamifero extends Animal{
 
@@ -13,8 +14,7 @@ public abstract class Mamifero extends Animal{
     @Override
     public void print() {
         super.print();
-        System.out.println(" Cor pelo: "+getCorPelo());
-        
+        System.out.println(" Cor pelo: "+getCorPelo()); 
     }
 
     // Getters and Setters

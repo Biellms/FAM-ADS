@@ -1,3 +1,5 @@
+package polimorfismo;
+
 public class Cachorro extends Mamifero{
 
     // Constructor
@@ -11,7 +13,7 @@ public class Cachorro extends Mamifero{
     public void print() {
         System.out.println(" -----------------------------------");
         super.print();
-        System.out.println("");
+        System.out.println();
     }
 
     public void enterrarOsso() {

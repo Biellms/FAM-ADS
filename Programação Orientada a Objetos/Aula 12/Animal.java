@@ -1,3 +1,5 @@
+package polimorfismo;
+
 public abstract class Animal {
 
     // Atibutos
@@ -24,7 +26,7 @@ public abstract class Animal {
 
     public void emitirSom(String som) {
         System.out.println(" Começou a emitir um som: "+som+"!");
-    }   
+    }
 
     public void print() {
         System.out.println(" "+nome);
