@@ -26,7 +26,7 @@ Repositório com conteúdos do curso de ADS. Contendo documentos de estudos, pro
 
 <br>
 
-- ### **[4º Semestre (em desenvolvimento)](https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery)** 
+- ### **[4º Semestre - Padafood (em desenvolvimento)](https://github.com/Biellms/ProjetoIntegrador-BakeryDelivery)** 
 > Criação de um aplicativo no qual a problemática são as dificuldades financeiras das padarias com baixa renda, o aplicativo será gratuito para todas as padarias de pequeno e médio porte. Após análises, foi identificado que as padarias de bairros mais humildes sofrem com prejuízos imensos, por não terem um meio de distribuição de seus produtos. Para a solução, uma aplicação foi criada, onde a padaria irá cadastrar seu comércio e catalogar os seus produtos no sistema, para que o cliente compre os seus produtos de forma segura e prática.
 
 #
