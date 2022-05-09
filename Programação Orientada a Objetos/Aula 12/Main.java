@@ -33,6 +33,13 @@ public class Main {
         Goldfish a5 = new Goldfish(0.243, 1, 0, "Dourada");
         a5.print();
         a5.soltarBolha();
-        a5.emitirSom("BlupBlup");
+        a5.locomover("nadar");
+
+        // Ave
+        Arara a6 = new Arara(16.5, 6, 2, "Azul");
+        a6.print();
+        a6.fazerNinho();
+        a6.locomover("voar");
+        a6.alimentar("minhocas");
     }
 }

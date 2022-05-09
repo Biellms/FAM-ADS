@@ -1,6 +1,6 @@
 package polimorfismo;
 
-public class Peixe extends Animal{
+public abstract class Peixe extends Animal{
 
     // Atributos
     private String corEscama;

@@ -1,20 +1,25 @@
 package polimorfismo;
 
-public abstract class Mamifero extends Animal{
-
+public abstract class Ave extends Animal{
+    
     // Atributos
     private String corPelo;
 
     // Construtor
-    public Mamifero(double peso, int idade, int membros, String corPelo) {
+    public Ave(double peso, int idade, int membros, String corPelo) {
         super(peso, idade, membros);
         this.corPelo = corPelo;
+    }
+
+    // Métodos
+    public void fazerNinho() {
+        System.out.println(" Começou a fazer um ninho!");
     }
 
     @Override
     public void print() {
         super.print();
-        System.out.println(" Cor pelo: "+getCorPelo()); 
+        System.out.println(" Cor pelo: "+getCorPelo());
     }
 
     // Getters and Setters
