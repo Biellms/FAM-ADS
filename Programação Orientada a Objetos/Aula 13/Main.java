@@ -12,5 +12,12 @@ public class Main {
 
         a2.print();
         a2.emitirSom("AUAUAUAUAUAUA");
+        a2.reagir("agradavel");
+        a2.reagir("Vai apanhar");
+        a2.reagir(19);
+        a2.reagir(15, 16);
+        a2.reagir(2, 13);
+        a2.reagir(true);
+        a2.reagir(false);
     }
 }
