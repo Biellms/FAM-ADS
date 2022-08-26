@@ -1,0 +1,17 @@
+DROP TABLE funcionarios;
+
+CREATE TABLE funcionarios (
+
+	id int,
+	nome varchar(50),
+	data_adimissao date,
+	salario decimal(10,2)
+);
+
+INSERT INTO funcionarios VALUES (1, 'Gabriel', '2022-08-26', 4000);
+INSERT INTO funcionarios VALUES (2, 'Joao', '2021-01-10', 6000);
+INSERT INTO funcionarios VALUES (3, 'Pedro', '2020-02-22', 3000);
+INSERT INTO funcionarios VALUES (4, 'Ana Julia', '2022-07-16', 3500);
+INSERT INTO funcionarios VALUES (5, 'Bruna', '2021-05-11', 5600);
+
+SELECT * FROM funcionarios;
