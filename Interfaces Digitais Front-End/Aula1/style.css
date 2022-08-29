@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
     color: white;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
-    background: #2e3844;
+    background: #20232A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,15 +16,14 @@
 
 .box {
     width: 850px;
-    height: 850px;
-    background: #1e1e1f;
     padding: 50px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
+    background: none;
 }
 
 .titulo {
