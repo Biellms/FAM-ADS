@@ -8,7 +8,7 @@
 }
 
 main {
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,18 +29,20 @@ h1:active {
 
 .footer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-top: 0.1px solid rgb(0, 0, 0);;
-    min-height: 20vh;
-    padding-bottom: 80px;
+    align-items: center;
+    border-top: 0.1px solid rgb(0, 0, 0);
+}
+
+.footer-text {
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    transition: 1s all;
+    padding-top: 20px;
 }
 
 .footer-text p{
-    font-size: 20px;
-    font-family: 'Righteous', cursive;
     color: rgb(0, 0, 0);
-    transition: 1s all;
 }
 
 .footer-text p:hover {
