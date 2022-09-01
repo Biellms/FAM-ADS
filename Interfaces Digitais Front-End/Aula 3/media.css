@@ -64,6 +64,10 @@
         background: rgb(134, 216, 134);
     }
 
+    main {
+        min-height: 70vh;
+    }
+
     .div1 {
      display: none;
     }
