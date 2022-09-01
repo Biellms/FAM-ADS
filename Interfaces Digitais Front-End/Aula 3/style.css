@@ -8,7 +8,7 @@
 }
 
 main {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h1:active {
-    transform: scale(2);
+    transform: scale(1.8);
     transition: 50ms;
 }
 
@@ -32,10 +32,11 @@ h1:active {
     align-items: center;
     justify-content: center;
     border-top: 0.1px solid rgb(0, 0, 0);;
+    min-height: 20vh;
+    padding-bottom: 80px;
 }
 
 .footer-text p{
-    padding-top: 20px;
     font-size: 20px;
     font-family: 'Righteous', cursive;
     color: rgb(0, 0, 0);
