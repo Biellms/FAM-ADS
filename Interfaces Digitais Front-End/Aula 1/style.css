@@ -1,39 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    box-sizing: border-box;
+    font-family: 'Paytone One', sans-serif;    
     color: white;
 }
 
-.container {
-    width: 100vw;
+body {
     height: 100vh;
-    background: #20232A;
+}
+
+.container {
+    height: 100%;
+    background: #405165;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box {
-    width: 850px;
-    padding: 50px;
-    box-sizing: border-box;
+    max-width: 1200px;
+    height: 100%;
+    /* padding: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    background: none;
+    background: #1a1c22;
 }
 
 .titulo {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.titulo-1 {
+    color: #E5F460;
+}
+
+.titulo-2 {
+    color: #EF4E50;
 }
 
 .paragrafo {
     font-size: 20px;
     text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 img {
