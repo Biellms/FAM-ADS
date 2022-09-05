@@ -23,7 +23,6 @@ body {
 .box {
     max-width: 1200px;
     height: 100%;
-    /* padding: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +55,6 @@ body {
 }
 
 img {
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
 }

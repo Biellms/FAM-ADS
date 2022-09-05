@@ -1,10 +1,8 @@
-@media screen and (min-width: 1440px) {
-    
-
-}
-
 @media screen and (min-width: 1024px) and (max-width: 1439px){
-    
+    img {
+        width: 500px;
+        height: 300px;
+    }
     
 }
 
@@ -26,8 +24,8 @@
     }
     
     img {
-        width: 600px;
-        height: 400px;
+        width: 500px;
+        height: 300px;
     }
 
 }
