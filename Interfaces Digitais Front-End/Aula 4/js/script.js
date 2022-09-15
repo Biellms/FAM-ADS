@@ -68,4 +68,4 @@ class Hello {
 
 var hello = new Hello;
 
-document.getElementById('total').style.color = 'white';
+document.getElementById('total').style.color = 'whitesmoke';
