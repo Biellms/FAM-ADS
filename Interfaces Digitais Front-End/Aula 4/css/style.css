@@ -7,21 +7,67 @@
     font-family: 'Oswald', sans-serif;
 }
 
+body {
+    background: rgb(31, 35, 44);
+}
+
 header {
     min-height: 5vh;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
-    gap: 50px;
-    border-bottom: 1px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header-div {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 30px;
+    gap: 15px;
+    text-align: center;
+}
+
+.header-div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 720px) {
+    .header-div {
+        justify-content: space-around;
+    }
 }
 
 button {
     min-height: 45px;
-    max-width: 120px;
-    width: 100%;
+    width: 120px;
+    font-size: 13px;
+    color: white;
+    background: rgb(23, 27, 37);
+    border: 1px solid rgba(255, 255, 255, 0.500);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.678);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: rgb(33, 39, 53);
+}
+
+button:active {
+    transform: scale(1.1);
+    transition: 0.3ms;
 }
 
 .container {
@@ -33,4 +79,8 @@ button {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+}
+
+.text {
+    color: white;
 }

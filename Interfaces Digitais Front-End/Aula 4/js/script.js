@@ -67,3 +67,5 @@ class Hello {
 }
 
 var hello = new Hello;
+
+document.getElementById('total').style.color = 'white';
