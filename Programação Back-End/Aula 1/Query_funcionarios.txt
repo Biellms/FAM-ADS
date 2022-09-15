@@ -2,9 +2,9 @@ DROP TABLE funcionarios;
 
 CREATE TABLE funcionarios (
 
-	id int,
+	re int,
 	nome varchar(50),
-	data_adimissao date,
+	dataAdimissao date,
 	salario decimal(10,2)
 );
 
