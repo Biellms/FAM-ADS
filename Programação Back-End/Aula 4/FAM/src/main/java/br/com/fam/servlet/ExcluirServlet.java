@@ -42,9 +42,10 @@ public class ExcluirServlet extends HttpServlet {
 	    out.println("<head>");
 	    out.println("<meta charset='ISO-8859-1'>");
 	    out.println("<title>Resultado</title>");
+	    out.println("<link rel='stylesheet' type='text/css' href='./style.css'>");
 	    out.println("</head>");
 	    out.println("<body>");
-		out.println("Funcionario excluido<br/><br/>");
+		out.println("Funcionario excluido<br/>");
 		out.println("<a href='http://localhost:9000/FAM/ListaServlet'>voltar ao menu principal</a>");
 	    out.println("</body>");
 	    out.println("</html>");

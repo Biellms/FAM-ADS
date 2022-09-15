@@ -41,12 +41,14 @@ public class ListaServlet extends HttpServlet {
 		out.println("<html>");
 	    out.println("<head>");
 	    out.println("<meta charset='ISO-8859-1'>");
-	    out.println("<title>Funcionários</title>");
+	    out.println("<title>Funcionarios</title>");
+	    out.println("<link rel='stylesheet' type='text/css' href='./style.css'>");
 	    out.println("</head>");
 	    out.println("<body>");
-		out.println("<table border='1'>");
+	    out.println("<h2>Tabela Funcionarios</h2></br>\r\n");
+		out.println("<table>");
 		out.println("<tr>\r\n"
-				+ "<th>RE</th><th>nome</th><th>data admissao</th><th>salário</th>\r\n"
+				+ "<th>RE</th><th>nome</th><th>data admissao</th><th>salario</th>\r\n"
 				+ "</tr>");
 		for( Funcionario f: lista ) {
 			out.println("<tr>\r\n"
@@ -55,10 +57,9 @@ public class ListaServlet extends HttpServlet {
 					+ "<td>" + f.getDataAdmissao() + "</td>"
 					+ "<td>" +f.getSalario() + "</td>\r\n"
 					+ "</tr>");
-			
 		}
 		out.println("</table><br/>");
-		out.println("<a href='http://localhost:9000/FAM/formList.html'>Cadastrar Funcionario</a><br><br>");
+		out.println("<a href='http://localhost:9000/FAM/formList.html'>Cadastrar Funcionario</a><br>");
 		out.println("<a href='http://localhost:9000/FAM/formDelete.html'>Excluir Funcionario</a>");
 	    out.println("</body>");
 	    out.println("</html>");
