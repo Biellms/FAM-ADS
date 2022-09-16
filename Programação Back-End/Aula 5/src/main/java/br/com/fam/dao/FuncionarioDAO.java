@@ -81,7 +81,7 @@ public class FuncionarioDAO {
 		
 		try {
 			Statement statement = connection.createStatement();
-			ResultSet rs = statement.executeQuery("SELECT * FROM FUNCIONARIOS");
+			ResultSet rs = statement.executeQuery("SELECT * FROM FUNCIONARIOS ORDER BY RE");
 			
 			while (rs.next()) {
 				int re = rs.getInt("re");

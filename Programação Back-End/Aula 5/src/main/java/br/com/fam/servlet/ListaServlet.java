@@ -59,8 +59,8 @@ public class ListaServlet extends HttpServlet {
 					+ "</tr>");
 		}
 		out.println("</table><br/>");
-		out.println("<a href='http://localhost:9000/FAM/formPost.html'>Cadastrar Funcionario</a><br>");
-		out.println("<a href='http://localhost:9000/FAM/formDelete.html'>Excluir Funcionario</a>");
+		out.println("<a href='http://localhost:9000/FAM/Funcionario/formPost.html'>Cadastrar Funcionario</a><br>");
+		out.println("<a href='http://localhost:9000/FAM/Funcionario/formDelete.html'>Excluir Funcionario</a>");
 	    out.println("</body>");
 	    out.println("</html>");
 	}

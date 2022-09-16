@@ -54,11 +54,11 @@ public class CadastroServlet extends HttpServlet {
 				+ "<head>\r\n"
 				+ "<meta charset=\"ISO-8859-1\">\r\n"
 				+ "<title>Insert title here</title>\r\n"
-				+ "<link rel='stylesheet' type='text/css' href='./style.css'>\r\n"
+				+ "<link rel='stylesheet' type='text/css' href='../style.css'>\r\n"
 				+ "</head>\r\n"
 				+ "<body>\r\n"
 				+ "Funcionario cadastrado<br>"
-				+ "<a href='http://localhost:9000/FAM/ListaServlet'>Tabela funcionarios</a>"
+				+ "<a href='http://localhost:9000/FAM/Funcionario/lista.jsp'>Tabela funcionarios</a>"
 				+ "\r\n"
 				+ "</body>\r\n"
 				+ "</html>");

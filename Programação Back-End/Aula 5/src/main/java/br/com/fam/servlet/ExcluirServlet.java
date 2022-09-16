@@ -46,7 +46,7 @@ public class ExcluirServlet extends HttpServlet {
 	    out.println("</head>");
 	    out.println("<body>");
 		out.println("Funcionario excluido<br/>");
-		out.println("<a href='http://localhost:9000/FAM/ListaServlet'>voltar ao menu principal</a>");
+		out.println("<a href='http://localhost:9000/FAM/Funcionario/lista.jsp'>voltar ao menu principal</a>");
 	    out.println("</body>");
 	    out.println("</html>");
 	}

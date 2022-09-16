@@ -9,7 +9,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Lista</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 
@@ -39,9 +39,10 @@
 	
 	</table>
 	
-	<a href='http://localhost:9000/FAM/formPost.html'>Cadastrar Funcionario</a>
-	<a href='http://localhost:9000/FAM/formPut.html'>Editar Funcionario</a>
-	<a href='http://localhost:9000/FAM/formDelete.html'>Excluir Funcionario</a>
+	<a href='http://localhost:9000/FAM/Funcionario/formPost.html'>Cadastrar Funcionario</a>
+	<a href='http://localhost:9000/FAM/Funcionario/formPut.html'>Editar Funcionario</a>
+	<a href='http://localhost:9000/FAM/Funcionario/formDelete.html'>Excluir Funcionario</a>
+	<a href="http://localhost:9000/FAM/Funcionario/">Menu Inicial</a>
 
 </body>
 </html>

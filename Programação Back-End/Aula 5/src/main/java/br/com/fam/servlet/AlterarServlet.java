@@ -58,7 +58,7 @@ public class AlterarServlet extends HttpServlet {
 				+ "</head>\r\n"
 				+ "<body>\r\n"
 				+ "Funcionario alterado<br>"
-				+ "<a href='http://localhost:9000/FAM/lista.jsp'>Tabela funcionarios</a>"
+				+ "<a href='http://localhost:9000/FAM/Funcionario/lista.jsp'>Tabela funcionarios</a>"
 				+ "\r\n"
 				+ "</body>\r\n"
 				+ "</html>");

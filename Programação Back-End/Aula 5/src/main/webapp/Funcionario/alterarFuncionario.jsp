@@ -8,7 +8,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Alterar Funcionario</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 	<%
@@ -23,7 +23,7 @@
 
 	<h2>Alterar Funcionario</h2>
 
-	<form action="gravarAlteracao">
+	<form action="http://localhost:9000/FAM/gravarAlteracao">
 	
 	RE: <input type="text" name='re' value='<%=f.getRe()%>'/>
 	Nome: <input type="text" name='nome' value='<%=f.getNome()%>'/>
@@ -36,6 +36,8 @@
 	
 	<br>
 	
-	<a href="http://localhost:9000/FAM/lista.jsp">Tabela funcionarios</a>
+	<a href="http://localhost:9000/FAM/Funcionario/lista.jsp">Tabela funcionarios</a>
+	<a href="http://localhost:9000/FAM/Funcionario/">Menu Inicial</a>
+	
 </body>
 </html>
