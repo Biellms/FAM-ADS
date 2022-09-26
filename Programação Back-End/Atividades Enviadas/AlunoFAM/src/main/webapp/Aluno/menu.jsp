@@ -9,8 +9,8 @@
 </head>
 <body>
 	<main>
-		<a>Tabela de alunos</a>
-		<a href="http://localhost:9000/AlunoFAM/Aluno/listaAlunos.jsp">Cadastrar aluno</a>
+		<a href="/AlunoFAM/Aluno/listaAlunos.jsp">Tabela de alunos</a>
+		<a href="/AlunoFAM/Aluno/postAluno.jsp">Cadastrar aluno</a>
 		<a>Deletar aluno</a>
 		<a>Editar aluno</a>
 	</main>

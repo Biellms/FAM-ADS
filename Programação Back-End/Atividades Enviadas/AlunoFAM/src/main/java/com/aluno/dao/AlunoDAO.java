@@ -2,6 +2,7 @@ package com.aluno.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -54,8 +55,23 @@ public class AlunoDAO {
 		return lista;
 	}
 	
-	public void postAluno() {
-			
+	public void postAluno(Aluno aluno) {
+			try {
+				String sql = "INSERT INTO alunos VALUES(?, ?, ?, ?, ?)";
+				PreparedStatement ps = connection.prepareStatement(sql);
+				
+				ps.setLong(1, aluno.getRa());
+				ps.setString(2, aluno.getNome());
+				ps.setString(3, aluno.getEmail());
+				ps.setDate(4, new java.sql.Date(aluno.getDataNasc().getTime()));
+				ps.setDouble(5, aluno.getRenda());
+				
+				ps.executeUpdate();
+	
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw new RuntimeException(e);
+			}
 		}
 	
 	public void putAluno() {
