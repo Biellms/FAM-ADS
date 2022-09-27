@@ -65,8 +65,7 @@ public class PutAlunoServlet extends HttpServlet {
 				+ "</main>\r\n"
 				+ "\r\n"
 				+ "</body>\r\n"
-				+ "</html>");
-		
+				+ "</html>");		
 	}
 
 	/**

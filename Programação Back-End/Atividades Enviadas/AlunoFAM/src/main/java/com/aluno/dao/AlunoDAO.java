@@ -48,7 +48,6 @@ public class AlunoDAO {
 	}
 	
 	public List<Aluno> getAllAlunos() {
-		
 		List<Aluno> lista = new ArrayList<>();
 		
 		try {
@@ -75,23 +74,23 @@ public class AlunoDAO {
 	}
 	
 	public void postAluno(Aluno aluno) {
-			try {
-				String sql = "INSERT INTO ALUNOS VALUES(?, ?, ?, ?, ?)";
-				PreparedStatement ps = connection.prepareStatement(sql);
-				
-				ps.setLong(1, aluno.getRa());
-				ps.setString(2, aluno.getNome());
-				ps.setString(3, aluno.getEmail());
-				ps.setDate(4, new java.sql.Date(aluno.getDataNasc().getTime()));
-				ps.setDouble(5, aluno.getRenda());
-				
-				ps.executeUpdate();
-	
-			} catch (SQLException e) {
-				e.printStackTrace();
-				throw new RuntimeException(e);
-			}
+		try {
+			String sql = "INSERT INTO ALUNOS VALUES(?, ?, ?, ?, ?)";
+			PreparedStatement ps = connection.prepareStatement(sql);
+			
+			ps.setLong(1, aluno.getRa());
+			ps.setString(2, aluno.getNome());
+			ps.setString(3, aluno.getEmail());
+			ps.setDate(4, new java.sql.Date(aluno.getDataNasc().getTime()));
+			ps.setDouble(5, aluno.getRenda());
+			
+			ps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
+	}
 	
 	public void putAluno(Aluno aluno) {
 		try {
