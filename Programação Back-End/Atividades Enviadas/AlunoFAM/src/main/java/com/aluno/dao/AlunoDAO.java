@@ -28,6 +28,25 @@ public class AlunoDAO {
 		}
 	}
 	
+	public Aluno getByRa(Long ra) {
+		try {
+			String sql = "SELECT * FROM ALUNOS WHERE RA = ?";
+			PreparedStatement ps = connection.prepareStatement(sql);
+			
+			ps.setLong(1, ra);
+			ResultSet rs = ps.executeQuery();
+			
+			if(rs.next()) {
+				return new Aluno(rs.getLong(1), rs.getString(2), rs.getString(3), rs.getDate(4), rs.getDouble(5));
+			} else {
+				return null;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+	}
+	
 	public List<Aluno> getAllAlunos() {
 		
 		List<Aluno> lista = new ArrayList<>();
@@ -74,8 +93,22 @@ public class AlunoDAO {
 			}
 		}
 	
-	public void putAluno() {
-		
+	public void putAluno(Aluno aluno) {
+		try {
+			String sql = "UPDATE ALUNOS SET NOME=?, EMAIL=?, DATANASC=?, RENDA=? WHERE RA=?";
+			PreparedStatement ps = connection.prepareStatement(sql);
+			
+			ps.setString(1, aluno.getNome());
+			ps.setString(2, aluno.getEmail());
+			ps.setDate(3, new java.sql.Date(aluno.getDataNasc().getTime()));
+			ps.setDouble(4, aluno.getRenda());
+			ps.setLong(5, aluno.getRa());
+			
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
 	}
 	
 	public void deleteAluno(Aluno aluno) {

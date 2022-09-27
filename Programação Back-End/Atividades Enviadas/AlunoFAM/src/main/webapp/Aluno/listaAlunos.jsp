@@ -38,7 +38,7 @@
 		%>
 		</table>
 		
-		<a href="/AlunoFAM/Aluno/">Voltar</a>
+		<a class="a" href="/AlunoFAM/Aluno/">Voltar</a>
 	</main>	
 	<jsp:include page="./footer.jsp"></jsp:include>
 </body>

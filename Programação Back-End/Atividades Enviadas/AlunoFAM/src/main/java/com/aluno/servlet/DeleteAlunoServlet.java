@@ -47,7 +47,7 @@ public class DeleteAlunoServlet extends HttpServlet {
 				+ "<body>\r\n"
 				+ "<main>\r\n"
 				+ "<h2>Aluno Deletado!</h2>"
-				+ "<a href='/AlunoFAM/Aluno/'>Voltar</a>"
+				+ "<a class='a' href='/AlunoFAM/Aluno/'>Voltar</a>"
 				+ "</main>\r\n"
 				+ "\r\n"
 				+ "</body>\r\n"

@@ -16,16 +16,16 @@ import com.aluno.dao.AlunoDAO;
 import com.aluno.model.Aluno;
 
 /**
- * Servlet implementation class PostAlunoServlet
+ * Servlet implementation class PutAlunoServlet
  */
-@WebServlet("/PostAlunoServlet")
-public class PostAlunoServlet extends HttpServlet {
+@WebServlet("/PutAlunoServlet")
+public class PutAlunoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PostAlunoServlet() {
+    public PutAlunoServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -47,7 +47,7 @@ public class PostAlunoServlet extends HttpServlet {
 		double renda = Double.parseDouble(request.getParameter("renda"));
 		
 		AlunoDAO dao = new AlunoDAO();
-		dao.postAluno(new Aluno(ra, nome, email, dataNasc, renda));
+		dao.putAluno(new Aluno(ra, nome, email, dataNasc, renda));
 		
 		PrintWriter out = response.getWriter();
 				
@@ -55,17 +55,18 @@ public class PostAlunoServlet extends HttpServlet {
 				+ "<html>\r\n"
 				+ "<head>\r\n"
 				+ "<meta charset=\"ISO-8859-1\">\r\n"
-				+ "<title>Aluno Cadastrado</title>\r\n"
+				+ "<title>Aluno Alterado</title>\r\n"
 				+ "<link rel='stylesheet' type='text/css' href='/AlunoFAM/Aluno/global.css'>\r\n"
 				+ "</head>\r\n"
 				+ "<body>\r\n"
 				+ "<main>\r\n"
-				+ "<h2>Aluno Cadastrado!</h2>"
+				+ "<h2>Aluno Alterado!</h2>"
 				+ "<a class='a' href='/AlunoFAM/Aluno/'>Voltar</a>"
 				+ "</main>\r\n"
 				+ "\r\n"
 				+ "</body>\r\n"
 				+ "</html>");
+		
 	}
 
 	/**

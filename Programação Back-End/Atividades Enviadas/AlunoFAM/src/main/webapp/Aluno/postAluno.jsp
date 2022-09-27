@@ -11,6 +11,8 @@
 	<jsp:include page="./navbar.jsp"></jsp:include>
 	
 	<main>
+		<h2>Cadastrar Aluno</h2>
+		
 		<form action="../PostAlunoServlet">
 			<div class="input">
 				RA: <input type="text" name="ra">
@@ -30,7 +32,7 @@
 			<button type="submit" value="enviar">Cadastrar</button>
 		</form>
 		
-		<a href="/AlunoFAM/Aluno/">Voltar</a>
+		<a class="a" href="/AlunoFAM/Aluno/">Voltar</a>
 	</main>
 
 	<jsp:include page="./footer.jsp"></jsp:include>
