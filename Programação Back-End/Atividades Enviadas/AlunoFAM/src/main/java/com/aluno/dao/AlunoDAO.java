@@ -35,7 +35,7 @@ public class AlunoDAO {
 		try {
 			Statement stmt = connection.createStatement();
 			
-			ResultSet rs = stmt.executeQuery(" SELECT * FROM alunos ORDER BY RA");
+			ResultSet rs = stmt.executeQuery(" SELECT * FROM ALUNOS ORDER BY RA");
 			
 			while (rs.next()) {
 				Long ra = rs.getLong("ra");
@@ -57,7 +57,7 @@ public class AlunoDAO {
 	
 	public void postAluno(Aluno aluno) {
 			try {
-				String sql = "INSERT INTO alunos VALUES(?, ?, ?, ?, ?)";
+				String sql = "INSERT INTO ALUNOS VALUES(?, ?, ?, ?, ?)";
 				PreparedStatement ps = connection.prepareStatement(sql);
 				
 				ps.setLong(1, aluno.getRa());
@@ -78,7 +78,16 @@ public class AlunoDAO {
 		
 	}
 	
-	public void deleteAluno() {
-		
+	public void deleteAluno(Aluno aluno) {
+		try {
+			String sql = "DELETE FROM ALUNOS WHERE RA = ?";
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ps.setLong(1, aluno.getRa());
+			ps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
 	}
 }

@@ -31,7 +31,7 @@
 				<td><%=a.getNome()%></td>
 				<td><%=a.getEmail()%></td>
 				<td><%=a.getDataNasc()%></td>
-				<td><%=a.getRenda()%></td>
+				<td>$<%=a.getRenda()%></td>
 				</tr> 
 				<%
 			}

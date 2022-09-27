@@ -5,29 +5,17 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./global.css">
-	<title>Cadastrar Aluno</title>
+	<title>Deletar Aluno</title>
 </head>
 <body>
 	<jsp:include page="./navbar.jsp"></jsp:include>
 	
 	<main>
-		<form action="../PostAlunoServlet">
+		<form action="../DeleteAlunoServlet">
 			<div class="input">
 				RA: <input type="text" name="ra">
 			</div>
-			<div class="input">
-				Nome: <input type="text" name="nome">
-			</div>
-			<div class="input">
-				E-mail: <input type="text" name="email">
-			</div>
-			<div class="input">
-				Data de Nascimento: <input type="text" name="dataNasc">
-			</div>
-			<div class="input">
-				Renda: <input type="text" name="renda">
-			</div>
-			<button type="submit" value="enviar">Cadastrar</button>
+			<button type="submit" value="enviar">Deletar</button>
 		</form>
 		
 		<a href="/AlunoFAM/Aluno/">Voltar</a>
