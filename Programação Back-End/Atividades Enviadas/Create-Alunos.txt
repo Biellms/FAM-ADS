@@ -1,0 +1,17 @@
+CREATE TABLE ALUNOS(
+	ra int,
+	nome varchar(50),
+	email varchar(50),
+	dataNasc date,
+	renda decimal(10,2),
+
+	CONSTRAINT pk_aluno PRIMARY KEY (ra)
+);
+
+INSERT INTO ALUNOS VALUES (1, 'Gabriel', 'gabriel@email.com', '2002-01-29', 3000);
+INSERT INTO ALUNOS VALUES (2, 'Cristiano', 'cristiano@email.com', '1992-02-19', A53000);
+INSERT INTO ALUNOS VALUES (3, 'Julia', 'julia@email.com', '2002-05-20', 13000);
+INSERT INTO ALUNOS VALUES (4, 'Joao', 'joao@email.com', '1995-11-20', 9000);
+INSERT INTO ALUNOS VALUES (5, 'Amanda', 'amanda@email.com', '1985-06-16', 15000);
+
+SELECT * FROM ALUNOS
