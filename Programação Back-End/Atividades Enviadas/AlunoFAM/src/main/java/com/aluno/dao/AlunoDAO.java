@@ -47,7 +47,7 @@ public class AlunoDAO {
 		}
 	}
 	
-	public List<Aluno> getAllAlunos() {
+	public List<Aluno> getLista() {
 		List<Aluno> lista = new ArrayList<>();
 		
 		try {
