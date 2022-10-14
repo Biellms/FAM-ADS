@@ -44,7 +44,10 @@ public class PutAlunoServlet extends HttpServlet {
 		} catch(ParseException e) {
 			dataNasc = null;
 		}
-		double renda = Double.parseDouble(request.getParameter("renda"));
+		double renda = 0;
+		if (request.getParameter("renda") != "") {
+			renda = Double.parseDouble(request.getParameter("renda"));
+		} 
 		
 		AlunoDAO dao = new AlunoDAO();
 		dao.putAluno(new Aluno(ra, nome, email, dataNasc, renda));

@@ -2,11 +2,16 @@
 <%@page import="com.aluno.model.Aluno"%>
 <%@page import="com.aluno.dao.AlunoDAO"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="fam" %>
 
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./global.css">
 	<title>Alterar Aluno</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	
 </head>
 <body>
 	<% 
@@ -25,21 +30,21 @@
 	
 		<form action="../PutAlunoServlet">
 			<div class="input">
-				RA: <input type="text" name="ra" value="<%=a.getRa()%>">
+				RA: <input type="text" name="ra" value="<%=a.getRa()%>" />
 			</div>
 			<div class="input">
-				Nome: <input type="text" name="nome" value="<%=a.getNome()%>">
+				Nome: <input type="text" name="nome" value="<%=a.getNome()%>" />
 			</div>
 			<div class="input">
-				E-mail: <input type="text" name="email" value="<%=a.getEmail()%>">
+				E-mail: <input type="text" name="email" value="<%=a.getEmail()%>" />
 			</div>
 			<div class="input">
-				Data de Nascimento: <input type="text" name="dataNasc" value="<%=dataNasc%>">
+				Data de Nascimento: <fam:campoData id="dataNasc" value="<%=dataNasc%>" />
 			</div>
 			<div class="input">
-				Renda: <input type="text" name="renda" value="<%=a.getRenda()%>">
+				Renda: <input type="text" name="renda" value="<%=a.getRenda()%>" />
 			</div>
-			<button type="submit" value="enviar">Alterar</button>
+			<input type="submit" value="Confirmar"/>
 		</form>
 		
 		<a class='a' href="/AlunoFAM/Aluno/">Voltar</a>

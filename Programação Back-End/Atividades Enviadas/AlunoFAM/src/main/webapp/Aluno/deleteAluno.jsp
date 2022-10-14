@@ -14,9 +14,9 @@
 	
 		<form action="../DeleteAlunoServlet">
 			<div class="input">
-				RA: <input type="text" name="ra">
+				Informe o RA do aluno que será deletado: <input type="text" name="ra">
 			</div>
-			<button type="submit" value="enviar">Deletar</button>
+			<input type="submit" value="Deletar"/>
 		</form>
 		
 		<a class="a" href="/AlunoFAM/Aluno/">Voltar</a>

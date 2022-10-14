@@ -11,8 +11,10 @@
 		<h2>Editar Aluno</h2>
 	
 		<form action="putAluno.jsp">
-			<div> Indique o RA do aluno: <input type='text' name='ra'/> </div>
-			<button type='submit' value='enviar'>Alterar</button>
+			<div class="input"> 
+				Informe o RA do aluno que será editado: <input type='text' name='ra'/> 
+			</div>
+			<input type="submit" value="Editar"/>
 		</form>
 		
 		<a class="a" href="/AlunoFAM/Aluno/">Voltar</a>

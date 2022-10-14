@@ -31,7 +31,12 @@
 					<c:if test="${empty aluno.email}"><span style="color: red">N/A</span></c:if>
 				</td>
 				<td><fmt:formatDate value="${aluno.dataNasc}" pattern="dd/MM/yyyy"/></td>
-				<td><fmt:formatNumber value="${aluno.renda}" type="currency"/></td>
+				<td>
+					<c:if test="${aluno.renda>'0'}">
+						<fmt:formatNumber value="${aluno.renda}" type="currency"/>
+					</c:if>
+					<c:if test="${aluno.renda=='0'}"><span style="color: red">N/A</span></c:if>
+				</td>
 			</tr>
 		</c:forEach>
 		
